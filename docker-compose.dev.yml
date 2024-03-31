@@ -1,0 +1,54 @@
+version: "3.9"
+services:
+    client:
+      image: client:init
+      build:
+        context: client
+        dockerfile: dev.dockerfile
+      ports:
+        - "3000:3000"
+      depends_on:
+        - server
+      command: sh /client/start.sh
+      volumes:
+        - ./client:/client
+      networks:
+        - frontend
+
+    server:
+      image: server:init
+      build:
+        context: server
+        dockerfile: dev.dockerfile
+      ports:
+        - "3001:3001"
+      environment:
+        - SECRET_KEY=TESTTESTTEST
+        - MONGODB_CONNSTRING=mongodb://mongo:27017/app?retryWrites=true&w=majority
+      depends_on:
+        - mongodb
+      command: sh /server/start_dev.sh
+      volumes:
+        - ./server:/server
+      links:
+        - "mongodb:mongo"
+      networks:
+        - backend
+        - frontend
+
+    mongodb:
+      image: mongo:latest
+      ports:
+        - "27017:27017"
+      # volumes:
+      #   - ./mdb-data:/data/db
+      networks:
+        - backend
+      restart: always  
+
+volumes:
+  client-node-modules:
+
+networks:
+  frontend:
+  backend:

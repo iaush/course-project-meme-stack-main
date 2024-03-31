@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
+
+.search-container {
+  width: 55%;
+  padding: 5% 0;
+  font-family: 'Quicksand';
+}
+
+.search-results-btn {
+  background-color: royalblue;
+  border: 0;
+}
+
+.search-bar-field {
+  font-weight: 600;
+}
+
+.search-results-btn:hover {
+  background-color: rgb(36, 59, 131);
+  border: 0;
+}
+
+.search-results-btn-added {
+  background-color: teal;
+  border: 0;
+}
+
+.search-results-btn-added:hover {
+  background-color: rgb(0, 99, 99);
+  border: 0;
+}

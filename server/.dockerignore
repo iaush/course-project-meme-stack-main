@@ -1,0 +1,9 @@
+/pubilc
+**/*backup
+.gitignore
+*.dockerfile
+/node_modules
+/.pnp
+.pnp.js
+node_modules
+/.yarn

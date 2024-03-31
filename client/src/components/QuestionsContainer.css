@@ -1,0 +1,21 @@
+.questionsContainer {
+  width: 100%;
+  background-color: rgb(235, 235, 235);
+  padding: 0.5em;
+  margin-right: 1em;
+}
+
+.answersContainer {
+  width: 100%;
+  border: 1px solid teal;
+  padding: 0.5em;
+  margin-right: 1em;
+}
+
+#questionInputBox {
+  margin-top: 1em;
+}
+
+.errorText {
+  color: red;
+}

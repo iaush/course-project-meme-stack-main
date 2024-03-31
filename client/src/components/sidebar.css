@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
+
+.sideBarContainer {
+  background-color: whitesmoke;
+  width: 20%;
+  height: 100%;
+  position: fixed;
+  padding: 2%;
+  font-size: 24px;
+  z-index: 20;
+}
+
+.sidebarHidden {
+  background-color: transparent;
+  width: 10%;
+  height: 100%;
+  display: flex;
+  padding: 0;
+}
+
+.iconHidden {
+  margin: 20px auto;
+}
+
+.itemsHidden {
+  display: none;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.navitems {
+  align-items: flex-start;
+  padding: 10px 30px;
+  margin: 10px 0px;
+  cursor: pointer;
+  /*border-bottom: 1px solid grey;*/
+}
+
+.navitems:hover {
+  background-color: rgb(175, 174, 174);
+  border-radius: 20px;
+  transition: 0.5s;
+  color: white;
+}
+
+.sideBarButton {
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.logout {
+  background-color: lightseagreen;
+}
+
+.search {
+  background-color: cornflowerblue;
+}
+
+.sideBarContainer h5 {
+  text-align: center;
+  font-family: 'Quicksand';
+  font-weight: 600;
+}
+
+.navitems p {
+  text-align: center;
+  margin: 0;
+  font-size: 20px;
+  color: black;
+  font-family: 'Quicksand';
+}
+
+.sideBarButton h5 {
+  text-align: center;
+  font-family: 'Quicksand';
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+@media only screen and (max-width: 768px) {
+  .sideBarContainer {
+    width: 100%;
+    position: fixed;
+  }
+
+  .sidebarHidden {
+    width: 0%;
+  }
+
+  .iconHidden {
+    width: 0%;
+  }
+
+  .search {
+    margin-top: 60px;
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+  }
+}

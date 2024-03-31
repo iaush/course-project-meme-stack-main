@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="702px" preserveAspectRatio="none" style="width:600px;height:702px;background:#FFFFFF;" version="1.1" viewBox="0 0 600 702" width="600px" zoomAndPan="magnify"><defs/><g><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
+class User--><g id="elem_User"><rect codeLine="2" fill="#F1F1F1" height="130.4414" id="User" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="184" x="26.5" y="15"/><ellipse cx="98.75" cy="31" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M101.2231,37.1431 Q100.6421,37.4419 100.0029,37.5913 Q99.3638,37.7407 98.6582,37.7407 Q96.1514,37.7407 94.8315,36.0889 Q93.5117,34.437 93.5117,31.3159 Q93.5117,28.1865 94.8315,26.5347 Q96.1514,24.8828 98.6582,24.8828 Q99.3638,24.8828 100.0112,25.0322 Q100.6587,25.1816 101.2231,25.4805 L101.2231,28.2031 Q100.5923,27.6221 99.9988,27.3523 Q99.4053,27.0825 98.7744,27.0825 Q97.4297,27.0825 96.7449,28.1492 Q96.0601,29.2158 96.0601,31.3159 Q96.0601,33.4077 96.7449,34.4744 Q97.4297,35.541 98.7744,35.541 Q99.4053,35.541 99.9988,35.2712 Q100.5923,35.0015 101.2231,34.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="31" x="119.25" y="36.291">User</text><line style="stroke:#181818;stroke-width:0.5;" x1="27.5" x2="209.5" y1="47" y2="47"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="32.5" y="64.5352">_id: ObjectId</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="117" x="32.5" y="81.0234">username: String</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="172" x="32.5" y="97.5117">hashed_password: String</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="143" x="32.5" y="114">anonymous: Boolean</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="128" x="32.5" y="130.4883">modules: [Module]</text><line style="stroke:#181818;stroke-width:0.5;" x1="27.5" x2="209.5" y1="137.4414" y2="137.4414"/></g><!--MD5=[2ca1536628238a7dc78c5d90808014f9]
+class Session--><g id="elem_Session"><rect codeLine="10" fill="#F1F1F1" height="163.418" id="Session" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="159" x="353" y="262"/><ellipse cx="402.25" cy="278" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M404.7231,284.1431 Q404.1421,284.4419 403.5029,284.5913 Q402.8638,284.7407 402.1582,284.7407 Q399.6514,284.7407 398.3315,283.0889 Q397.0117,281.437 397.0117,278.3159 Q397.0117,275.1865 398.3315,273.5347 Q399.6514,271.8828 402.1582,271.8828 Q402.8638,271.8828 403.5112,272.0322 Q404.1587,272.1816 404.7231,272.4805 L404.7231,275.2031 Q404.0923,274.6221 403.4988,274.3523 Q402.9053,274.0825 402.2744,274.0825 Q400.9297,274.0825 400.2449,275.1492 Q399.5601,276.2158 399.5601,278.3159 Q399.5601,280.4077 400.2449,281.4744 Q400.9297,282.541 402.2744,282.541 Q402.9053,282.541 403.4988,282.2712 Q404.0923,282.0015 404.7231,281.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="52" x="422.75" y="283.291">Session</text><line style="stroke:#181818;stroke-width:0.5;" x1="354" x2="511" y1="294" y2="294"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="359" y="311.5352">_id: ObjectId</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="123" x="359" y="328.0234">created: Date.now</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="105" x="359" y="344.5117">createdBy: User</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="147" x="359" y="361">questions: [Question]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="359" y="377.4883">tags: [Tag]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="100" x="359" y="393.9766">scores: [Score]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="147" x="359" y="410.4648">overallScores: [Score]</text><line style="stroke:#181818;stroke-width:0.5;" x1="354" x2="511" y1="417.418" y2="417.418"/></g><!--MD5=[fc7123defb831ecdd44b2d9bcef6cceb]
+class Question--><g id="elem_Question"><rect codeLine="20" fill="#F1F1F1" height="146.9297" id="Question" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="160" x="433.5" y="549"/><ellipse cx="478.25" cy="565" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M480.7231,571.1431 Q480.1421,571.4419 479.5029,571.5913 Q478.8638,571.7407 478.1582,571.7407 Q475.6514,571.7407 474.3315,570.0889 Q473.0117,568.437 473.0117,565.3159 Q473.0117,562.1865 474.3315,560.5347 Q475.6514,558.8828 478.1582,558.8828 Q478.8638,558.8828 479.5112,559.0322 Q480.1587,559.1816 480.7231,559.4805 L480.7231,562.2031 Q480.0923,561.6221 479.4988,561.3523 Q478.9053,561.0825 478.2744,561.0825 Q476.9297,561.0825 476.2449,562.1492 Q475.5601,563.2158 475.5601,565.3159 Q475.5601,567.4077 476.2449,568.4744 Q476.9297,569.541 478.2744,569.541 Q478.9053,569.541 479.4988,569.2712 Q480.0923,569.0015 480.7231,568.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="498.75" y="570.291">Question</text><line style="stroke:#181818;stroke-width:0.5;" x1="434.5" x2="592.5" y1="581" y2="581"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="439.5" y="598.5352">_id: ObjectId</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="148" x="439.5" y="615.0234">sessionId: Session._id</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="109" x="439.5" y="631.5117">question: String</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="439.5" y="648">answer: String</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="439.5" y="664.4883">created: Date</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="115" x="439.5" y="680.9766">submitter: String</text><line style="stroke:#181818;stroke-width:0.5;" x1="434.5" x2="592.5" y1="687.9297" y2="687.9297"/></g><!--MD5=[39d6d2ea03de602dbf4d534e70c872a9]
+class Tag--><g id="elem_Tag"><rect codeLine="29" fill="#F1F1F1" height="113.9531" id="Tag" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="117" x="233" y="565.5"/><ellipse cx="274.55" cy="581.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M277.0231,587.6431 Q276.4421,587.9419 275.8029,588.0913 Q275.1638,588.2407 274.4582,588.2407 Q271.9514,588.2407 270.6315,586.5889 Q269.3117,584.937 269.3117,581.8159 Q269.3117,578.6865 270.6315,577.0347 Q271.9514,575.3828 274.4582,575.3828 Q275.1638,575.3828 275.8112,575.5322 Q276.4587,575.6816 277.0231,575.9805 L277.0231,578.7031 Q276.3923,578.1221 275.7988,577.8523 Q275.2053,577.5825 274.5744,577.5825 Q273.2297,577.5825 272.5449,578.6492 Q271.8601,579.7158 271.8601,581.8159 Q271.8601,583.9077 272.5449,584.9744 Q273.2297,586.041 274.5744,586.041 Q275.2053,586.041 275.7988,585.7712 Q276.3923,585.5015 277.0231,584.9204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="26" x="294.45" y="586.791">Tag</text><line style="stroke:#181818;stroke-width:0.5;" x1="234" x2="349" y1="597.5" y2="597.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="239" y="615.0352">_id: ObjectId</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="239" y="631.5234">created: Date</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="105" x="239" y="648.0117">createdBy: User</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="87" x="239" y="664.5">name: String</text><line style="stroke:#181818;stroke-width:0.5;" x1="234" x2="349" y1="671.4531" y2="671.4531"/></g><!--MD5=[107af66394bf1ebaa045812c9c475148]
+class Score--><g id="elem_Score"><rect codeLine="36" fill="#F1F1F1" height="146.9297" id="Score" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="136" x="312.5" y="7"/><ellipse cx="357.25" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M359.7231,29.1431 Q359.1421,29.4419 358.5029,29.5913 Q357.8638,29.7407 357.1582,29.7407 Q354.6514,29.7407 353.3315,28.0889 Q352.0117,26.437 352.0117,23.3159 Q352.0117,20.1865 353.3315,18.5347 Q354.6514,16.8828 357.1582,16.8828 Q357.8638,16.8828 358.5112,17.0322 Q359.1587,17.1816 359.7231,17.4805 L359.7231,20.2031 Q359.0923,19.6221 358.4988,19.3523 Q357.9053,19.0825 357.2744,19.0825 Q355.9297,19.0825 355.2449,20.1492 Q354.5601,21.2158 354.5601,23.3159 Q354.5601,25.4077 355.2449,26.4744 Q355.9297,27.541 357.2744,27.541 Q357.9053,27.541 358.4988,27.2712 Q359.0923,27.0015 359.7231,26.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="38" x="377.75" y="28.291">Score</text><line style="stroke:#181818;stroke-width:0.5;" x1="313.5" x2="447.5" y1="39" y2="39"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="318.5" y="56.5352">_id: ObjectId</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="318.5" y="73.0234">created: Date</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="105" x="318.5" y="89.5117">createdBy: User</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="99" x="318.5" y="106">score: number</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="124" x="318.5" y="122.4883">sessionId: Session</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69" x="318.5" y="138.9766">tagId: Tag</text><line style="stroke:#181818;stroke-width:0.5;" x1="313.5" x2="447.5" y1="145.9297" y2="145.9297"/></g><!--MD5=[2b7409a316d9d2e410653e6983353aed]
+class Module--><g id="elem_Module"><rect codeLine="45" fill="#F1F1F1" height="245.8594" id="Module" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="223" x="7" y="220"/><ellipse cx="88.75" cy="236" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M91.2231,242.1431 Q90.6421,242.4419 90.0029,242.5913 Q89.3638,242.7407 88.6582,242.7407 Q86.1514,242.7407 84.8315,241.0889 Q83.5117,239.437 83.5117,236.3159 Q83.5117,233.1865 84.8315,231.5347 Q86.1514,229.8828 88.6582,229.8828 Q89.3638,229.8828 90.0112,230.0322 Q90.6587,230.1816 91.2231,230.4805 L91.2231,233.2031 Q90.5923,232.6221 89.9988,232.3523 Q89.4053,232.0825 88.7744,232.0825 Q87.4297,232.0825 86.7449,233.1492 Q86.0601,234.2158 86.0601,236.3159 Q86.0601,238.4077 86.7449,239.4744 Q87.4297,240.541 88.7744,240.541 Q89.4053,240.541 89.9988,240.2712 Q90.5923,240.0015 91.2231,239.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51" x="109.25" y="241.291">Module</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="229" y1="252" y2="252"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="13" y="269.5352">_id: ObjectId</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="75" x="13" y="286.0234">id: number</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="82" x="13" y="302.5117">code: String</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="149" x="13" y="319">semester: enum [1, 2]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="112" x="13" y="335.4883">acadYear: String</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="75" x="13" y="351.9766">title: String</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="126" x="13" y="368.4648">description: String</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="129" x="13" y="384.9531">department: String</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="137" x="13" y="401.4414">moduleCode: String</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="105" x="13" y="417.9297">createdBy: User</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="145" x="13" y="434.418">status: enum [0, 1, 2]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="211" x="13" y="450.9063">weeks: Map&lt;string, [Session]&gt;</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="229" y1="457.8594" y2="457.8594"/></g><!--MD5=[f9de2bb19878a305f28748b71d38c3b7]
+link Session to Question--><g id="link_Session_Question"><path codeLine="60" d="M456.8,426.76 C468.17,465.71 481.58,511.65 492.51,549.07 " fill="none" id="Session-Question" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="450.2908" y="445.9896">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="6" x="484.036" y="538.3121">*</text></g><!--MD5=[6db584d704a9a07b5b3ea7d308b35cad]
+link Module to Session--><g id="link_Module_Session"><path codeLine="62" d="M237.78,342.5 C271.58,342.5 305.37,342.5 339.16,342.5 " fill="none" id="Module-to-Session" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="344.03,342.5,335.03,338.5,339.03,342.5,335.03,346.5,344.03,342.5" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[53ba1a8314754a866920016b1e35a368]
+link Session to Tag--><g id="link_Session_Tag"><path codeLine="63" d="M390.2,426.76 C367.32,471.78 339.7,526.13 319.51,565.88 " fill="none" id="Session-Tag" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="378.7998" y="445.9896">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="6" x="316.8707" y="554.8562">*</text></g><!--MD5=[22efb7535b06a28aa507c24e7f6cb2c7]
+link Score to Session--><g id="link_Score_Session"><path codeLine="65" d="M395.54,155.99 C401.93,188.06 409.4,225.55 415.94,258.41 " fill="none" id="Score-Session" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="6" x="390.3866" y="174.407">*</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="24" x="390.4674" y="251.2014">0..1</text></g><!--MD5=[c2a5972afbc0cfb835d7a91836b9e494]
+link Score to Tag--><g id="link_Score_Tag"><path codeLine="66" d="M346.62,155.97 C339.2,175.2 332.18,196.08 327.5,216 C299.4,335.62 292.87,479.82 291.57,559.86 " fill="none" id="Score-to-Tag" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="291.48,564.52,295.6082,555.5781,291.5514,559.5205,287.609,555.4638,291.48,564.52" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="335.9566" y="174.3856">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="24" x="265.9399" y="554.8498">0..1</text></g><!--MD5=[df73fa967e92d1ce3e33c210b4902442]
+link User to Module--><g id="link_User_Module"><path codeLine="68" d="M118.5,147.71 C118.5,168.71 118.5,192.59 118.5,216.23 " fill="none" id="User-Module" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="110.1938" y="166.0316">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="6" x="112.4016" y="209.4">*</text></g><!--MD5=[f71a4202c656d1e16712f4620f17a19b]
+@startuml
+
+class User {
+    _id: ObjectId
+    username: String
+    hashed_password: String
+    anonymous: Boolean
+    modules: [Module]
+}
+
+class Session {
+  _id: ObjectId
+  created: Date.now
+  createdBy: User
+  questions: [Question]
+  tags: [Tag]
+  scores: [Score]
+  overallScores: [Score]
+}
+
+class Question {
+  _id: ObjectId
+  sessionId: Session._id
+  question: String
+  answer: String
+  created: Date
+  submitter: String
+}
+
+class Tag {
+    _id: ObjectId
+    created: Date
+    createdBy: User
+    name: String
+}
+
+class Score {
+    _id: ObjectId
+    created: Date
+    createdBy: User
+    score: number
+    sessionId: Session
+    tagId: Tag
+}
+
+class Module {
+  _id: ObjectId
+  id: number
+  code: String
+  semester: enum [1, 2]
+  acadYear: String
+  title: String
+  description: String
+  department: String
+  moduleCode: String
+  createdBy: User
+  status: enum [0, 1, 2]
+  weeks: Map<string, [Session]>
+}
+
+Session::questions "1" - - "*" Question
+
+Module::weeks -> Session
+Session::tags "1" - - "*" Tag
+
+Score::sessionId "*" - - "0..1" Session::scores
+Score::tagId "1" -> "0..1" Tag
+
+User::modules "1" - - "*" Module
+@enduml
+
+PlantUML version 1.2022.7(Tue Aug 23 01:01:30 SGT 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: GB
+--></g></svg>

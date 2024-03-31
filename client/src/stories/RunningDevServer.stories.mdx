@@ -1,0 +1,86 @@
+import { Meta } from '@storybook/addon-docs';
+import RepoRelation from './assets/repo-relation.png';
+
+<Meta title="Running the project" />
+
+# Running the project
+
+For ease of running, the container has been built and uploaded to dockerhub.
+To run the image, make sure `docker-compose` is installed, and run the service using 
+```
+docker-compose -f docker-compose.yml up
+```
+
+To get a better idea of how the app works, a init script has also been provided inside 
+the server container.
+
+In another terminal, find the name of the running container for the server.
+This is likely `it5007-project_server_1`. Execute the following (replacing the container) name if its different:
+```
+docker exec -it it5007-project_server_1 sh
+```
+Ensure that you're in the server container by checking that it starts with `/server #`.
+Then run the seeding script 
+```
+node ./seedMongoDB.js
+```
+
+If all goes well, the container should have some data seeded. Log in using the following.  
+Username: `admin@nus`
+Password: `admin`
+
+The app should be running on port `3000` (Frontend served by express as it is now built)  
+Documentation and information about our project can be found at `/docs`  
+API endpoint documentation can be found at `/api-docs`  
+
+## Starting a dev server
+1. Install docker onto the target machine (with docker-compose)
+2. Git clone the repository at [`https://github.com/IT5007-2220/course-project-meme-stack`](https://github.com/IT5007-2220/course-project-meme-stack)
+3. `cd` into the root of the repository, e.g. `cd course-project-meme-stack`
+4. Run the dev server using `./scripts/start_services_dev.sh` (Unix based systems only)
+
+This development environment was made specifically for local development, where folders are 
+mounted to local filesystem (and not just copied into the docker container) so that changes to the repository 
+as made in the container do change in the local filesystem. This is so that all 3 containers can be updated and worked 
+on. The repo and its relation can be visualised like so:
+
+<img src={RepoRelation} />
+
+REST API endpoints and their information have been made available at `http://localhost:<serverport>/api-docs` e.g. `http://localhost:3001/api-docs`
+
+Likewise, mongodb is available locally at port `27017`.
+
+In the dev environment, the admin user account is initiated and can be accessed via:
+Username: `admin@nus`
+Password: `admin`
+
+## Production server
+Starting the production server would require some configuration. From within the `client` folder,
+run `yarn build`. This should build the react app into the servers public folder to be served should a 
+user request the base path (ie. not `/api` or `/api-docs` path).
+
+After, only the server container and the mongodb container needs to be run. This can be adapted from 
+the `docker-compose.dev.yml`, in the repository as `docker-compose.prod.yml`, where we can remove the 
+react container / server as it would be built into the server repo to be run.
+
+To run the production server, the `SECRET_KEY` env variable needs to be defined in the docker-compose before building 
+the required containers. The container is then tagged and committed before being pushed / deployed to cloud.
+
+An example of such server is at [157.230.195.31](http://157.230.195.31) (or [https://it5007-group-memestack.antheajfwong.com/](https://it5007-group-memestack.antheajfwong.com/)) 
+at the time of writing, where the deployment was completed by uploading `docker-compose.yml` - the final compose file that pulls 
+from docker hub instead of rebuilding from this repository - and running them.
+
+Deployment from local is therefore:  
+* to run the production scripts at `scripts/start_services_prod.sh` which builds the react apps 
+into `server/public` and initiates and creates the server containers; as well as runs the server to be tested
+* If all looks good, then running `scripts/push_docker_hub.sh` which takes the latest built server container and pushes it to docker hub 
+
+As the image is now on docker hub, `docker-compose.yml` can therefore be distributed onto server where the images can be automatically 
+downloaded and run using `docker compose -f ./course-project-meme-stack/docker-compose.yml up --pull always -d` (changing the file path where appropriate).
+
+It is recommended to set up firewall and reverse proxy such as `nginx` to proxy traffic from port `80` to port `3000` (such as implemented on the aforementioned server).
+Firewalls are implemented to block traffic on all non `443`, `80` and `22` both on server provider and on server via nginx config.
+
+It is also recommended to secure the machine using ssh keypair. 
+In the machine above, traffic using ssh has been also been limited to allowed ssh keypairs for which the allowed 
+machines with private keys resolving to the allowed public keys acknowledged by the server has been uploaded.

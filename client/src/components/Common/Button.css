@@ -1,0 +1,27 @@
+.custom-button {
+  font-size: 20px;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.dark-blue-button {
+  background-color: rgb(46, 85, 159);
+  border: 1px solid rgb(46, 85, 159);
+}
+
+.blue-button {
+  background-color: cornflowerblue;
+  border: 1px solid cornflowerblue;
+}
+
+.medium-button {
+  width: 300px;
+}
+
+.large-button {
+  width: 100%;
+}

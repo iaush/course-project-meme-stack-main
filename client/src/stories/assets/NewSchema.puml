@@ -1,0 +1,70 @@
+@startuml
+
+class User {
+    _id: ObjectId
+    username: String
+    hashed_password: String
+    anonymous: Boolean
+    modules: [Module]
+}
+
+class Session {
+  _id: ObjectId
+  created: Date.now
+  createdBy: User
+  questions: [Question]
+  tags: [Tag]
+  scores: [Score]
+  overallScores: [Score]
+}
+
+class Question {
+  _id: ObjectId
+  sessionId: Session._id
+  question: String
+  answer: String
+  created: Date
+  submitter: String
+}
+
+class Tag {
+    _id: ObjectId
+    created: Date
+    createdBy: User
+    name: String
+}
+
+class Score {
+    _id: ObjectId
+    created: Date
+    createdBy: User
+    score: number
+    sessionId: Session
+    tagId: Tag
+}
+
+class Module {
+  _id: ObjectId
+  id: number
+  code: String
+  semester: enum [1, 2]
+  acadYear: String
+  title: String
+  description: String
+  department: String
+  moduleCode: String
+  createdBy: User
+  status: enum [0, 1, 2]
+  weeks: Map<string, [Session]>
+}
+
+Session::questions "1" -- "*" Question
+
+Module::weeks -> Session
+Session::tags "1" -- "*" Tag
+
+Score::sessionId "*" -- "0..1" Session::scores
+Score::tagId "1" -> "0..1" Tag
+
+User::modules "1" -- "*" Module
+@enduml

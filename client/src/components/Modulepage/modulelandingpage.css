@@ -1,0 +1,12 @@
+.session-options {
+  font-family: 'Quicksand';
+  background-color: teal;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  text-align: center;
+  width: 200px;
+  border: 1px solid teal;
+  margin: 20px 0;
+}

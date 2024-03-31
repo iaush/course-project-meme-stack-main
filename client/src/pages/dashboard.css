@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
+
+.dashboard-container {
+  width: 80%;
+  /* padding: 5% 0; */
+  font-family: 'Quicksand';
+}
+
+.module-options-btn {
+  background-color: lightgray;
+  border-radius: 10px;
+  border: none;
+  width: 30vw;
+  height: 20vh;
+  color: black;
+}
+
+.module-options-card {
+  background-color: transparent;
+  border: 0;
+}
+
+.link-btn {
+  font-family: 'Quicksand';
+  background-color: teal;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.link-btn:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 992px) {
+  .module-options-btn {
+    min-width: 50vw;
+  }
+}

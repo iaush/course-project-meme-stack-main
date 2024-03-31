@@ -1,0 +1,61 @@
+import { Meta, Story } from '@storybook/addon-docs';
+import NewSchema from './assets/NewSchema.svg';
+import CommitHistory from './assets/commitHistory.svg';
+import CommitGraph from './CommitGraph';
+
+<Meta title="Project Implementation & changes" />
+
+# Project Implementation & changes
+
+## Change: Problem formulation
+During implementation, we had faced quite a number of changes due to constraints. The first being the 
+project problem itself. 
+
+In our [initial problem formulation](?path=/story/archive-it5007-initial-project-problem-formulation--page), we 
+had came to realize that the given that nusmods already implements a similar solution in the form of disqus. As 
+there is little to distinguish our solution as a clear improvement over what is well-established source of information 
+for module planning, we thought to pivot our solution to collecting that feedback over time. We liked the idea that 
+more granular feedback is needed, however the form for which we receive that had changed as we discussed different 
+methods to create incentives for seeking that feedback. This was how we have arrived at our current problem formulation 
+of having it also be a lecture / teaching support tool for which the usage involves the lecturer. By involving and engaging 
+all required parties, we create an avenue for which everyone has incentive to participate.
+
+For the students, they would be able to submit questions and moderately anonymous feedback to demonstrate their current level 
+of understanding on the topic. For the lecturers, they would be able to have ongoing feedback for the classes understanding on the module,
+and elaborate and refine their syllabus more on the subjects for which the understanding is low on.
+
+This was how we arrived at our current problem formulation, where we had pivotted wholely to creating a teaching-support tool 
+to assist in engaging students and informing lecturer of the classes general understanding at any class.
+
+## Change: Schema
+From our project planning phase, the schema changed multiple times to support different functionalities.
+For example, from our original schema, we had started to prioritize `User` and `Module` as we changed our definition of user from 
+faculty and student to just faculty. This was due to NUS student login not having a readily integratable api, as well as that most 
+students would be unlikely to wish to log in to go through the additional step to log in to participate. The barrier to engagement 
+needed to be low to encourage interaction. In addition, we felt that partial anonymity would be beneficial in encouraging students to provide 
+feedback of lack of understanding without being singled out and encourage objective feedback.
+
+Second was that in defining User to be Lecturer, they would be the same people to select the modules for which is relevant to 
+them that they are teaching, hence it would make most sense to associate the few modules that are relevant to the lecturers for which 
+have an account created. To also support that some functionality require user input and association, some new attribute fields were 
+added to User to create ephemeral anonymous user accounts for students. These can be forgone, however we felt this important to help 
+track and avoid repeated rating submissions, hence an additional attribute `anonymous` was created for which these accounts have 
+usernames tied to the unique session that was created by staff.
+
+Over the course of the project implementation, our schemas have changed multiple times to facilitate API fetching as well and 
+efficient storage as well as support real-time updates.
+
+The final schemas and their relations can be found defined here in code: 
+[Github](https://github.com/IT5007-2220/course-project-meme-stack/tree/main/server/models)
+
+<img src={NewSchema} />
+
+## Implementation
+Overall, our UI and user interaction flow had remained mostly the same as what we have envisioned 
+in our revised project problem formulation. Hence during our implementation, the majority of changes and challenges were technical 
+implementations and constraints and general errors such as machine differences. 
+
+## Timeline of commits and changes
+Note: Latest commit at the top
+
+<CommitGraph />

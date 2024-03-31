@@ -1,0 +1,30 @@
+import { Meta } from '@storybook/addon-docs';
+
+<Meta title="Novel and Implemented Features" />
+
+# Novel and Implemented Features
+
+Our application has implemented the following:
+
+* Asymmetric Real-time feedback of questions & answers as well as ratings / feedbacks for a lecture session as well as subjects pertaining to the session
+    * This is achieved using Websocket API (specifically socket.io) which allows bidirectional low latency data updates between clients and server
+    * Lecturers therefore see real-time updates of ratings received so far for the session and (seperately) each individual subject for the session
+    * Lecturers also receive questions in real time. Any answers provided will also be feedback to all students connected to the session
+    * As more ratings for each subject is submitted, Lecturers UI is shown a bar chart of the distribution of ratings submitted that represent students understanding of the topic so far
+    * Students are able to provide ratings for each subject
+    * Students are able to provide ratings for the overall session (for lecturers reference for next semesters syllabus planning)
+    * Students are able to submit questions to lecturer via the UI and are shown answers as they are being updated by lecturers
+    * Schema uses `Tags` to represent Subjects covered in a particular class so that each subject can be reviewed and rated independently to other subjects covered in the class
+        * For example, if this weeks class and thus session covers `React` and `Express`, each student can feedback from 1-5 their understanding of each of these subjects / tags independently
+    * QR code for students to join the session
+* Lecturer's dashboard contains all of the ratings provided for all sessions over the semester to help plan the syllabus for next semester
+* All questions and answers are kept for lecturers reference of commonly asked questions can be integrated into the module
+* Application queries NUSMods APIs to keep module summary and related data are always relevant and update
+* Modularization by seperating server / database containers (client not required as it is built into server container)
+    * In production, should one service require update, containers can be deployed and switch out to reduce downtime (rolling deployment)
+    * In addition, server components are seperated into model, api components to be able to allow flexibility in extending models 
+      or api's seperately if required
+    * Client modularization is achieved by seperating pages to componenents and using stores to pass globally required functions and 
+    states throughout the app
+* Routing is implemented to allow users to navigate to a certain session and for logged in faculty to know where they are in 
+  viewing module data for which they are overseeing

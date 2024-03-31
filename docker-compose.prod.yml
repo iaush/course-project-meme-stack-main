@@ -1,0 +1,30 @@
+version: "3.9"
+services:
+    server:
+      image: it5007-course-project-meme-stack:init
+      build:
+        context: server
+        dockerfile: prod.dockerfile
+      ports:
+        - "3000:3001"
+      environment:
+        - SECRET_KEY=SETTHISVARIABLE
+        - MONGODB_CONNSTRING=mongodb://mongo:27017/app?retryWrites=true&w=majority
+      depends_on:
+        - mongodb
+      command: sh /server/start_prod.sh
+      links:
+        - "mongodb:mongo"
+      networks:
+        - backend
+
+    mongodb:
+      image: mongo:latest
+      volumes:
+        - ./mdb-data:/data/db
+      networks:
+        - backend
+      restart: always  
+
+networks:
+  backend:

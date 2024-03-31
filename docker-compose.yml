@@ -1,0 +1,23 @@
+version: "3.9"
+services:
+    server:
+      image: antaresjf/it5007-course-project-meme-stack:init
+      ports:
+        - "3000:3001"
+      depends_on:
+        - mongodb
+      links:
+        - "mongodb:mongo"
+      networks:
+        - backend
+
+    mongodb:
+      image: mongo:latest
+      volumes:
+        - ./mdb-data:/data/db
+      networks:
+        - backend
+      restart: always  
+
+networks:
+  backend:

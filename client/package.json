@@ -1,0 +1,95 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.12.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@tippy.js/react": "^3.1.1",
+    "@tippyjs/react": "^4.2.6",
+    "axios": "^1.2.6",
+    "bootstrap": "^5.2.3",
+    "chart.js": "^4.2.1",
+    "jwt-decode": "^3.1.2",
+    "nusmoderator": "^3.0.0",
+    "qrcode.react": "^3.1.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.7.0",
+    "react-bootstrap-sidebar-menu": "^2.0.3",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.42.1",
+    "react-router-bootstrap": "^0.26.2",
+    "react-router-dom": "^6.7.0",
+    "react-scripts": "5.0.1",
+    "socket.io-client": "^4.6.1",
+    "sweetalert": "^2.1.2",
+    "sweetalert2": "^11.7.3",
+    "web-vitals": "^2.1.0",
+    "zustand": "^4.3.6"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "BUILD_PATH='../server/public' react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public -s ./.storybook/public -o ../docs",
+    "build-storybook-server": "STORYBOOK_BASE_HREF=docs build-storybook -s public -s ./.storybook/public -o ../server/public/docs",
+    "storybook-docs": "start-storybook --docs --no-manager-cache",
+    "build-storybook-docs": "build-storybook --docs"
+  },
+  "eslintConfig": {
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "packageManager": "yarn@3.3.1",
+  "devDependencies": {
+    "@excalidraw/excalidraw": "^0.15.1",
+    "@mdx-js/react": "^1.6.22",
+    "@storybook/addon-actions": "^6.5.15",
+    "@storybook/addon-docs": "^6.5.15",
+    "@storybook/addon-essentials": "^6.5.15",
+    "@storybook/addon-interactions": "^6.5.15",
+    "@storybook/addon-links": "^6.5.15",
+    "@storybook/builder-webpack5": "^6.5.15",
+    "@storybook/manager-webpack5": "^6.5.15",
+    "@storybook/node-logger": "^6.5.15",
+    "@storybook/preset-create-react-app": "^4.1.2",
+    "@storybook/react": "^6.5.15",
+    "@storybook/testing-library": "^0.0.13",
+    "babel-plugin-named-exports-order": "^0.0.2",
+    "prettier": "2.8.3",
+    "prop-types": "^15.8.1",
+    "react-is": "^18.2.0",
+    "storybook-docs-toc": "^1.7.0",
+    "styled-components": "^5.3.6",
+    "webpack": "^5.75.0"
+  },
+  "proxy": "http://localhost:3001"
+}

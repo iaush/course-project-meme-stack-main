@@ -1,0 +1,8 @@
+#auth-background {
+    background-color: #e5e5f7;
+    /*opacity: 0.3;*/
+    background-image:  linear-gradient(#b0b0b0 2px, transparent 2px), linear-gradient(90deg, #b0b0b0 2px, transparent 2px), linear-gradient(#b0b0b0 1px, transparent 1px), linear-gradient(90deg, #b0b0b0 1px, #e5e5f7 1px);
+    background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+
